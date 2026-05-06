@@ -1,0 +1,32 @@
+{
+  "index": 87,
+  "phase": 1,
+  "batch": 10,
+  "name": "wasmpeek",
+  "planned_name": "wasmpeek",
+  "language": "JavaScript",
+  "category": "Developer tools",
+  "goal": "Inspect WebAssembly text fragments for imports and exports.",
+  "repository_url": "https://github.com/ZachL111/wasmpeek",
+  "verification_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/verify.ps1",
+  "model": {
+    "inputs": [
+      "demand",
+      "capacity",
+      "latency",
+      "risk",
+      "weight"
+    ],
+    "threshold": 176,
+    "risk_penalty": 7,
+    "latency_penalty": 2,
+    "weight_bonus": 6,
+    "decision_rule": "accept when score is greater than or equal to threshold, otherwise review"
+  },
+  "quality_gates": [
+    "readme constraint scan",
+    "fixture presence check",
+    "metadata JSON parse",
+    "language verifier"
+  ]
+}

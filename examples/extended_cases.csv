@@ -1,0 +1,7 @@
+name,demand,capacity,latency,risk,weight,score,decision,reason
+baseline,68,84,19,12,9,152,review,developer tools baseline scenario exercises the review path for bounded failure handling
+pressure,86,71,29,20,8,93,review,developer tools pressure scenario exercises the review path for bounded failure handling
+surge,98,95,18,16,14,227,accept,developer tools surge scenario keeps the local fixture within the modeled acceptance band
+degraded,63,56,33,28,7,-38,review,developer tools degraded scenario exercises the review path for bounded failure handling
+recovery,83,104,17,11,10,219,accept,developer tools recovery scenario keeps the local fixture within the modeled acceptance band
+boundary,74,78,26,17,7,97,review,developer tools boundary scenario exercises the review path for bounded failure handling
