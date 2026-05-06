@@ -1,0 +1,73 @@
+{
+  "repo": "wasmpeek",
+  "language": "JavaScript",
+  "category": "Developer tools",
+  "goal": "Inspect WebAssembly text fragments for imports and exports.",
+  "review_model": {
+    "terms": [
+      "change width",
+      "diagnostic quality",
+      "review cost",
+      "safe rewrite"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "change width",
+      "signal": 56,
+      "slack": 41,
+      "drag": 32,
+      "confidence": 83,
+      "score": 140,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "diagnostic quality",
+      "signal": 80,
+      "slack": 54,
+      "drag": 9,
+      "confidence": 79,
+      "score": 266,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "review cost",
+      "signal": 66,
+      "slack": 41,
+      "drag": 16,
+      "confidence": 78,
+      "score": 203,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "safe rewrite",
+      "signal": 77,
+      "slack": 49,
+      "drag": 27,
+      "confidence": 53,
+      "score": 175,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "change width",
+      "signal": 60,
+      "slack": 21,
+      "drag": 28,
+      "confidence": 84,
+      "score": 141,
+      "lane": "ship"
+    }
+  ]
+}
